@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOW TO WIN FRIENDS</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>PHRASE OF THE DAY</h1>
+        <p>inspirational phrases from the book "How To Win Friends and Influence People"</p>
+    </div>
+
+    <form action="/" method="get">
+        <button type="submit">new phrase</button>
+    </form>
+    
+    <% 
+    let num = Math.floor(Math.random()*30); 
+    %>
+
+    <div class="content fade-in">
+        <p id="principle"><%= phrase[num].principle %></p>
+        <p id="title">title: <%= phrase[num].title %></p>
+        <p id="phrase">"<%= phrase[num].phrase %>"</p>
+    </div>
+</body>
+</html>
